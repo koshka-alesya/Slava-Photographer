@@ -1,0 +1,12 @@
+.header{
+    background-color: black;
+    padding: 20px 0;
+    display:flex;
+
+    &__logo{
+        font-family: 'Playfair Display', serif;
+        color: orange;
+        height: 50px;
+
+    }
+}

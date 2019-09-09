@@ -1,0 +1,22 @@
+.main{
+    letter-spacing: 0.1em;
+    text-align:left;
+    &__name1{
+        font-size:60px;
+        letter-spacing: 0.1em;
+        margin:0;
+    }
+
+    &__name2{
+        font-size:30px;
+        letter-spacing: 0.1em;
+        margin-bottom:30px;
+    }
+
+    &__hello{
+        font-size: 14px;
+    }
+
+    
+
+}

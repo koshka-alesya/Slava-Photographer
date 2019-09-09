@@ -1,0 +1,56 @@
+.menu{
+    display:flex;
+
+    &__list{
+        display:flex;
+    }
+
+    &__item{
+        margin-right: 40px;
+
+        &:last-child{
+            margin-right: 0px;
+        }
+
+        &:hover{
+            > .menu__link{
+                &:hover:after{
+                    width: 100%;
+                }
+                &:focus:after{
+                    width:100%;
+                }
+            }
+        }
+    }
+
+    &__link{
+        text-transform: uppercase;
+        font-size:12px;
+        color:white;
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+
+        position: relative;
+
+        &:hover{
+            text-decoration: none;
+            color:white;
+        }
+
+
+        &:after {
+            display: block;
+            position: absolute;
+            margin-top: 3px;
+            left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+            width: 0;/*задаём длинну линии до наведения курсора*/
+            height: 3px; /*задаём ширину линии*/
+            background-color: orange; /*задаём цвет линии*/
+            content: "";
+            transition: width 0.3s ease-out; /*задаём время анимации*/
+        }
+
+    }
+}

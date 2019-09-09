@@ -1,0 +1,20 @@
+.icon{
+    display:flex;
+    margin-top:30px;
+
+    &__item{
+        margin-right:20px;
+    }
+
+    &__img{
+        width:30px;
+        height: 30px;
+        fill:orange;
+        &:hover{
+            animation-name: heart;
+            animation-duration: .7s;
+        }
+    }
+
+    
+}
