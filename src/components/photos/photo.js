@@ -1,4 +1,4 @@
-export const photos=[
+export const photo=[
     [
     {
     src: require('../../img/photos/photos/photo-main.jpg'),

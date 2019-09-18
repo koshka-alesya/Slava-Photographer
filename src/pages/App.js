@@ -11,7 +11,7 @@ import Main from '../components/main/Main';
 import About from '../components/about/About';
 import Gallery from '../components/gallery/Gallery';
 
-
+import Burger from '../components/burger-menu/Burger';
 
 class App extends Component{
   constructor(props){
@@ -68,17 +68,20 @@ class App extends Component{
   render(){
     return(
       <div className = "App">
-        <div className = {'container-fluid p-0'}>
+        <div className = {'container-fluid px-3'}>
           <div className={'row'}>
-            <div className ={'col-8 p-0'}>
-              <Header menu={this.state.menu}/>
-              <div className={'mt-5'}>
+            <div className ={'col-lg-8 col-md-6 col-12 p-0'}>
+              <Burger />
+            
+            
+              <div className={'mt-md-5 mt-3'}>
                 <Main icons={this.state.icons}/>
               </div>
             </div>
-            <div className ={'col-4 p-0'}>
+            
+            <div className ={'col-lg-4 col-md-6 col-12 p-0'}>
               <Img src={require('../img/slava.jpg')} alt='Slava' />
-              <hr className="App__border__main"></hr>
+              <hr className="App__border__main" id="App__border__main"></hr>
             </div>
 
            

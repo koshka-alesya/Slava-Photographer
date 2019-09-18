@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Button from '../button/Button';
-import { photos } from "../photos/photos.js";
-import Photos from "../photos/Photos";
+import { photo } from '../photos/photo';
+import Phot from '../photos/Phot';
+
 
 class Portfolio extends Component
 {
@@ -23,11 +24,19 @@ class Portfolio extends Component
             <ul className="portfolio__list">
                 {this.props.portfolio.map((item, index)=>(
                     <li className="portfolio__item" key={item.id}>
-                        <Button type= {'button'} key ={index} className={'btn-light'} text={item.text} onclick={
-                            ()=>{
-                                this.setState({ activePlace:index});
                         
-                            }}/>
+
+                            <button type={'button'}
+                                            className="portfolio__btn"
+                                            
+                                            onClick={ () =>{
+                                                this.setState({ activePlace:index});
+                                
+                                            }
+                                            }> {item.text}
+                                            </button>
+
+                            
                     </li>
                 )
              )
@@ -36,8 +45,8 @@ class Portfolio extends Component
         </nav>
 
         
-        
-            <Photos key={activePlace} photos={photos[activePlace]}/>
+        <Phot key={activePlace} photos={photo[activePlace]} />
+            
         </div>
     )
 }

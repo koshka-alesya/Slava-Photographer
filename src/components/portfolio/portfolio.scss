@@ -1,0 +1,40 @@
+.portfolio{
+    &__list{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        @include media-breakpoint-down(sm){
+            margin-bottom:20px;
+        }
+    }
+
+    &__item{
+        margin-right:30px;
+        
+    }
+
+    &__btn{
+        padding:10px;
+        background: transparent;
+        font-size:25px;
+        color:orange;
+        color: #FFF;
+        border: none;
+        border-radius: 5px;
+
+        &:hover{
+            color:orange;
+        }
+
+        &:active, &:focus{
+            outLine:none !important;
+            box-shadow:none;
+            color:orange;
+
+        }
+        
+        //border-bottom: 3px solid orange;
+
+    }
+}

@@ -3,10 +3,21 @@
     padding: 20px 0;
     display:flex;
 
+    @include media-breakpoint-down(sm){
+        padding:5px 0;
+    }
+
     &__logo{
         font-family: 'Playfair Display', serif;
         color: orange;
         height: 50px;
+        
+        @include media-breakpoint-down(sm){
+            height:30px;
+        }
 
     }
+    
+
+
 }

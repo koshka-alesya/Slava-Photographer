@@ -5,6 +5,9 @@
 @import "../components/header/header";
 @import "../components/main/main";
 @import "../components/about/about";
+@import "../components/portfolio/portfolio";
+@import "../components/burger-menu/burger";
+
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
@@ -86,7 +89,7 @@ body {
   padding: 0;
   margin: 0;
   color:white;
-  background-color:black;
+  background-color: black;
   letter-spacing: 0.1em;
 }
 

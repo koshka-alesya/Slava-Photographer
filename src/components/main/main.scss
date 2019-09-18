@@ -1,20 +1,60 @@
 .main{
+    padding-top:20px;
     letter-spacing: 0.1em;
     text-align:left;
+
+    @include media-breakpoint-up(xl){
+        padding-top:50px;
+    }
+
+    @include media-breakpoint-down(sm){
+        text-align:center;
+        letter-spacing:normal;
+        padding-top:70px;
+
+    }
+
     &__name1{
         font-size:60px;
         letter-spacing: 0.1em;
         margin:0;
+
+        @include media-breakpoint-down(md){
+            font-size:40px;
+        }
+
+        @include media-breakpoint-up(xl){
+            font-size:70px;
+        }
+
+        
     }
 
     &__name2{
         font-size:30px;
         letter-spacing: 0.1em;
         margin-bottom:30px;
+
+        @include media-breakpoint-down(md){
+            font-size:20px;
+        }
+
+        @include media-breakpoint-up(xl){
+            font-size:50px;
+        }
+
     }
 
     &__hello{
         font-size: 14px;
+
+        @include media-breakpoint-up(xl){
+            font-size:20px;
+        }
+
+        @include media-breakpoint-down(sm){
+            font-size:10px;
+        }
     }
 
     

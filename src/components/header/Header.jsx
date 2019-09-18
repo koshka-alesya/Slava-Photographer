@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import Menu from '../menu/Menu'
+
+
+import Burger from '../burger-menu/Burger';
 
 
 const Header=(props)=>{
@@ -12,7 +14,7 @@ const Header=(props)=>{
                         </div>
 
                         <div className={'col-9'}>
-                            <Menu menu={props.menu} />
+                           <Burger />
 
                         </div>
                     </div>

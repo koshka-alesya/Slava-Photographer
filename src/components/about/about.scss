@@ -7,6 +7,10 @@
     &__description{
      font-size:17px;
     // color:black;
+
+    @include media-breakpoint-down(sm){
+       font-size:10px;
+    }
     }
     
 }
