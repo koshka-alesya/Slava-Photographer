@@ -37,29 +37,35 @@ class App extends Component{
 
     icons:[
       {
-        url:'#',
+        url:'https://vk.com/horizon_photos',
         src: require('../img/vk.svg'),
       },
       {
-        url:'#',
+        url:'https://www.instagram.com/kornilov.photo/',
         src: require('../img/insta.svg'),
       },
       {
-        url:'#',
-        src: require('../img/facebook.svg'),
+        url:'mailto:slava_k_98@mail.ru',
+        src: require('../img/messages.svg'),
       },
     ],
     portfolio:[
       {
         id:'portret',
-        text:'Портретная съемка',
+        text:'Портреты',
         active: true,
       },
       {
         id: 'concert',
         text: 'Концерты',
         active: false,
-      }
+      },
+      {
+        id: 'rep',
+        text: 'Репортаж',
+        active: false,
+      },
+
 
     ]
     }

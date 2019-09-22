@@ -10,8 +10,15 @@
     }
 
     &__item{
+       
         margin-right:30px;
-        
+        &:last-child{
+            margin-right:0;
+
+        }
+        @include media-breakpoint-down(sm){
+            margin-right:0;      
+         }
     }
 
     &__btn{
@@ -22,6 +29,11 @@
         color: #FFF;
         border: none;
         border-radius: 5px;
+        
+
+        @include media-breakpoint-down(sm){
+           font-size:16px;        
+        }
 
         &:hover{
             color:orange;
